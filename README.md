@@ -1,5 +1,3 @@
-# `@deltabox/toolchain-test`
-
 Integration and edge-case harness for [`@deltabox/toolchain`](../toolchain). It
 is intentionally a separate repository so tests can install from npm, use every
 package manager/linker, and run destructive scaffolding/sync flows without
