@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-docker",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: docker",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "docker",
+        "packageManager": "yarn",
+        "nodeLinker": "node-modules",
+        "runtime": "docker"
+    }
+}

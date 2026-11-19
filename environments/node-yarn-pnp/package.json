@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-node-yarn-pnp",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: node-yarn-pnp",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "node-yarn-pnp",
+        "packageManager": "yarn",
+        "nodeLinker": "pnp",
+        "runtime": "node"
+    }
+}

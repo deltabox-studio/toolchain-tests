@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-deno",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: deno",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "deno",
+        "packageManager": "deno",
+        "nodeLinker": "none",
+        "runtime": "deno"
+    }
+}

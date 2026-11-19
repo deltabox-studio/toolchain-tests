@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-bun",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: bun",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "bun",
+        "packageManager": "bun",
+        "nodeLinker": "none",
+        "runtime": "bun"
+    }
+}

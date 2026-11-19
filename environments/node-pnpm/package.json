@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-node-pnpm",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: node-pnpm",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "node-pnpm",
+        "packageManager": "pnpm",
+        "nodeLinker": "isolated",
+        "runtime": "node"
+    }
+}

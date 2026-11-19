@@ -1,0 +1,15 @@
+{
+    "name": "@deltabox/toolchain-test-node-yarn",
+    "private": true,
+    "type": "module",
+    "description": "Integration environment: node-yarn",
+    "scripts": {
+        "test": "vp test run"
+    },
+    "deltabox": {
+        "environment": "node-yarn",
+        "packageManager": "yarn",
+        "nodeLinker": "node-modules",
+        "runtime": "node"
+    }
+}

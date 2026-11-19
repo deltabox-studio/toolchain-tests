@@ -1,0 +1,30 @@
+{
+    "name": "@deltabox/toolchain-test",
+    "private": true,
+    "type": "module",
+    "description": "Integration and edge-case harness for @deltabox/toolchain.",
+    "packageManager": "yarn@4.17.1",
+    "engines": {
+        "node": ">=22.5.0"
+    },
+    "workspaces": [
+        "environments/*"
+    ],
+    "scripts": {
+        "dbx": "tsx --tsconfig ../toolchain/tsconfig.json ../toolchain/src/cli/index.ts",
+        "test": "vp run --filter \"./environments/*\" test",
+        "test:root": "vp test run",
+        "typecheck": "node scripts/typecheck.mjs"
+    },
+    "devDependencies": {
+        "@deltabox/toolchain": "portal:../toolchain",
+        "@types/node": "^22.0.0",
+        "tsx": "^4.20.0",
+        "typescript": "^6.0.3",
+        "vite-plus": "1.2.0",
+        "zod": "4.6.5"
+    },
+    "resolutions": {
+        "zod": "4.6.5"
+    }
+}
